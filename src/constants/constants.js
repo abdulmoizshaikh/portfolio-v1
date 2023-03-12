@@ -5,7 +5,8 @@ export const constants = {
       title: "Hisaab - Digital Credit Ledger",
       description:
         "Hisaab is an easy digital ledger by Retailo that simplifies bookkeeping for all business and personal use",
-      image: "/images/hisaab.jpeg",
+      // image: "/images/hisaab.jpeg",
+      image: "/images/hisaab2.png",
       tags: ["React Native", "NestJs", "Node", "Express", "MySql"],
       source:
         "https://play.google.com/store/apps/details?id=com.app.retailohisaab&hl=en&gl=US",
