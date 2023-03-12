@@ -20,5 +20,6 @@ https://www.youtube.com/watch?v=OPaLnMw2i_0&list=PL6QREj8te1P7gixBDSU8JLvQndTEEX
 
 ## copy ideas from this website and replicate in your website like industries section and portfolio projects display section
 
-1. https://www.genesissols.com/
-2. https://developerfolio.js.org/
+1. https://abdulmoizshaikh.github.io/Portfolio/
+2. https://www.genesissols.com/
+3. https://developerfolio.js.org/
