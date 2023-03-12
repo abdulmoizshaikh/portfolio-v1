@@ -23,3 +23,14 @@ https://www.youtube.com/watch?v=OPaLnMw2i_0&list=PL6QREj8te1P7gixBDSU8JLvQndTEEX
 1. https://abdulmoizshaikh.github.io/Portfolio/
 2. https://www.genesissols.com/
 3. https://developerfolio.js.org/
+
+**Others portfolio for the reference and guidance**
+
+- Sir hisham server company Informist portfolio
+  https://www.informist.co.uk/portfolio.asp
+
+- Sir haider company
+  https://www.genesissols.com/
+
+- Sir sadiq iccbs
+  https://oreference.com/
