@@ -25,6 +25,17 @@ export const constants = {
         "https://play.google.com/store/apps/details?id=com.app.retailerapp&hl=en&gl=US",
       // visit: "",
     },
+    {
+      id: 2,
+      title: "ASKWHO - Meet New People",
+      description:
+        "ASKWHO is a location based group app that allows local people to share, learn and gain knowledge on the topics they care most about.",
+      image: "/images/askwho.png",
+      tags: ["Node", "MySQL", "AWS"],
+      source:
+        "https://play.google.com/store/apps/details?id=com.askwho.app&hl=en&gl=US",
+      // visit: "",
+    },
   ],
 
   TimeLineData: [
