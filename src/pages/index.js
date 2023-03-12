@@ -7,6 +7,7 @@ import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 import { useRouter } from "next/router";
+import ScrollToTopButton from "../components/TopButton/Top";
 
 const Home = () => {
   const router = useRouter();
@@ -22,6 +23,7 @@ const Home = () => {
       <Technologies />
       <Timeline />
       {/* <Acomplishments /> */}
+      <ScrollToTopButton />
     </Layout>
   );
 };
