@@ -49,6 +49,23 @@ export const constants = {
         "https://play.google.com/store/apps/details?id=com.postleagueapp&hl=en&gl=US",
       // visit: "",
     },
+    {
+      id: 4,
+      title: "ValAir",
+      description: `
+      Val-Air, a valet parking service, will serve customers in and around major airports!
+      Convenient, flexible and affordable parking is available to you at your fingertips just by completing three simple steps:
+
+      1. Download the ValAir app;
+      2. Input your travel details (departure/arrival date, time, terminal, gate, etc.); and
+      3. Drive your vehicle and luggage directly to your desired airport terminal/gate.
+
+      And that's it! A ValAir representative will be ready to serve you and handle all your parking needs.
+      In the meantime, follow us on Facebook (@valaircanada) and Instagram (@valairinc) to stay posted on launch details, promotions and much more!`,
+      image: "/images/valair.png",
+      tags: ["React Native", "NodeJs", "Android & IOS"],
+      source: "https://play.google.com/store/apps/details?id=com.valair.app",
+    },
   ],
 
   TimeLineData: [
