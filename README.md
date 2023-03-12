@@ -21,3 +21,5 @@ https://www.youtube.com/watch?v=OPaLnMw2i_0&list=PL6QREj8te1P7gixBDSU8JLvQndTEEX
 ## copy ideas from this website and replicate in your website like industries section and portfolio projects display section
 
 https://www.genesissols.com/
+
+testing moiz user git
