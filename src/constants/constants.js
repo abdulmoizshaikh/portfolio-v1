@@ -12,7 +12,6 @@ export const constants = {
       tags: ["React Native", "NestJs", "Node"],
       source:
         "https://play.google.com/store/apps/details?id=com.app.retailohisaab&hl=en&gl=US",
-      // visit: "",
     },
     {
       id: 1,
@@ -23,7 +22,6 @@ export const constants = {
       tags: ["React Native", "NestJs", "Node"],
       source:
         "https://play.google.com/store/apps/details?id=com.app.retailerapp&hl=en&gl=US",
-      // visit: "",
     },
     {
       id: 2,
@@ -34,7 +32,6 @@ export const constants = {
       tags: ["Node", "MySQL", "AWS"],
       source:
         "https://play.google.com/store/apps/details?id=com.askwho.app&hl=en&gl=US",
-      // visit: "",
     },
     {
       id: 3,
@@ -47,7 +44,6 @@ export const constants = {
       tags: ["React Native", "NodeJs", "Android & IOS", "Testflight"],
       source:
         "https://play.google.com/store/apps/details?id=com.postleagueapp&hl=en&gl=US",
-      // visit: "",
     },
     {
       id: 4,
