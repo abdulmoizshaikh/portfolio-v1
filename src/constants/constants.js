@@ -63,7 +63,7 @@ export const constants = {
       And that's it! A ValAir representative will be ready to serve you and handle all your parking needs.
       In the meantime, follow us on Facebook (@valaircanada) and Instagram (@valairinc) to stay posted on launch details, promotions and much more!`,
       image: "/images/valair.png",
-      tags: ["React Native", "NodeJs", "Android & IOS"],
+      tags: ["ReactJs", "React Native", "NodeJs"],
       source: "https://play.google.com/store/apps/details?id=com.valair.app",
     },
   ],
