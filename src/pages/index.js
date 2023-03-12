@@ -6,12 +6,16 @@ import Technologies from "../components/Technologies/Technologies";
 import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
+import { useRouter } from "next/router";
 
 const Home = () => {
+  const router = useRouter();
+  const onClickLearnMore = () => router.push("/#about");
+
   return (
     <Layout>
       <Section grid>
-        <Hero />
+        <Hero handleClick={onClickLearnMore} />
         <BgAnimation />
       </Section>
       <Projects />
