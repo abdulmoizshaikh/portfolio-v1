@@ -191,6 +191,11 @@
   "resolved" "https://registry.npmjs.org/@next/env/-/env-10.2.3.tgz"
   "version" "10.2.3"
 
+"@next/font@^13.2.4":
+  "integrity" "sha512-lMAnuOYjv5g22WhD00u0DQ9u2rTMJH0S64PKE4Sy8Y2q+FJTYs6ZHT2z3VRoI8+AOWSLK4FirpnygcjOienQ9A=="
+  "resolved" "https://registry.npmjs.org/@next/font/-/font-13.2.4.tgz"
+  "version" "13.2.4"
+
 "@next/polyfill-module@10.2.3":
   "integrity" "sha512-OkeY4cLhzfYbXxM4fd+6V4s5pTPuyfKSlavItfNRA6PpS7t1/R6YjO7S7rB8tu1pbTGuDHGIdE1ioDv15bAbDQ=="
   "resolved" "https://registry.npmjs.org/@next/polyfill-module/-/polyfill-module-10.2.3.tgz"
