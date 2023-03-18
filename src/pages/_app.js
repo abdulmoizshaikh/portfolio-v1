@@ -1,6 +1,8 @@
 import Theme from '../styles/theme';
 import { Roboto } from '@next/font/google';
 
+// Poppins: https://fonts.google.com/specimen/Poppins
+
 const roboto = Roboto({
   subsets: ['latin'],
   weight: [400, 700],
