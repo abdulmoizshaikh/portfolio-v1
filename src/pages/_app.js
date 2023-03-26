@@ -1,5 +1,5 @@
 import Theme from '../styles/theme';
-import { Roboto } from '@next/font/google';
+import { Roboto } from 'next/font/google';
 
 // Poppins: https://fonts.google.com/specimen/Poppins
 
