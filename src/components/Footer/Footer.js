@@ -1,8 +1,8 @@
-import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { constants } from "../../constants/constants";
+import React from 'react';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { constants } from '../../constants/constants';
 
-import { SocialIcons } from "../Header/HeaderStyles";
+import { SocialIcons } from '../Header/HeaderStyles';
 import {
   CompanyContainer,
   FooterWrapper,
@@ -13,12 +13,17 @@ import {
   Slogan,
   SocialContainer,
   SocialIconsContainer,
-} from "./FooterStyles";
+} from './FooterStyles';
 
 const Footer = () => {
   const { socialLinks } = constants;
   return (
     <FooterWrapper>
+      <CompanyContainer>
+        <Slogan>
+          DISCUSS A PROJECT OR JUST WANT TO SAY HI MY INBOX IS OPEN FOR ALL
+        </Slogan>
+      </CompanyContainer>
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
