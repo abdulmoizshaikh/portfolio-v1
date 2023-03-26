@@ -10,7 +10,7 @@ import { LinkItem, LinkColumn, LinkList, LinkTitle } from './ContactMeStyles';
 const ContactMe = () => {
   return (
     <Section id="contact">
-      <SectionTitle>Contact Me</SectionTitle>
+      <SectionTitle>Contact Me ☎️</SectionTitle>
       <SectionText>
         DISCUSS A PROJECT OR JUST WANT TO SAY HI MY INBOX IS OPEN FOR ALL
       </SectionText>
