@@ -19,7 +19,7 @@ const Footer = () => {
   const { socialLinks } = constants;
   return (
     <FooterWrapper>
-      <LinkList>
+      {/* <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
           <LinkItem href="tel:+92-304-5464742">+92-304-5464742</LinkItem>
@@ -30,7 +30,7 @@ const Footer = () => {
             muhammadmoizshaikh@gmail.com
           </LinkItem>
         </LinkColumn>
-      </LinkList>
+      </LinkList> */}
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>Innovating one project at a time</Slogan>
