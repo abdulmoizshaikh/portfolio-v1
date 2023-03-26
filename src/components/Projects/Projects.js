@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import {
   BlogCard,
@@ -12,13 +12,13 @@ import {
   TitleContent,
   UtilityList,
   Img,
-} from "./ProjectsStyles";
+} from './ProjectsStyles';
 import {
   Section,
   SectionDivider,
   SectionTitle,
-} from "../../styles/GlobalComponents";
-import { constants } from "../../constants/constants";
+} from '../../styles/GlobalComponents';
+import { constants } from '../../constants/constants';
 
 const { projects } = constants;
 
@@ -32,7 +32,7 @@ const Projects = () => (
           <BlogCard key={i}>
             <Img src={p.image} />
             <TitleContent>
-              <HeaderThree title>{p.title}</HeaderThree>
+              <HeaderThree title="true">{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
