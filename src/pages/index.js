@@ -15,15 +15,15 @@ const Home = () => {
 
   return (
     <Layout>
-      {/* <Section grid> */}
-      {/* <Hero handleClick={onClickLearnMore} /> */}
-      {/* <BgAnimation /> */}
-      {/* </Section> */}
-      {/* <Projects />
+      <Section grid>
+        <Hero handleClick={onClickLearnMore} />
+        <BgAnimation />
+      </Section>
+      <Projects />
       <Technologies />
-      <Timeline /> */}
+      <Timeline />
       {/* <Acomplishments /> */}
-      {/* <ScrollToTopButton /> */}
+      <ScrollToTopButton />
     </Layout>
   );
 };
