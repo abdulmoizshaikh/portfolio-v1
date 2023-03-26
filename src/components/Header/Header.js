@@ -26,19 +26,19 @@ const Header = () => (
     </Div1> */}
     <Div2>
       <li>
-        <Link href="#projects">
-          <NavLink>Projects</NavLink>
-        </Link>
+        {/* <Link href="#projects"> */}
+        <NavLink href="#projects">Projects</NavLink>
+        {/* </Link> */}
       </li>
       <li>
-        <Link href="#tech">
-          <NavLink>Technologies</NavLink>
-        </Link>
+        {/* <Link href="#tech"> */}
+        <NavLink href="#tech">Technologies</NavLink>
+        {/* </Link> */}
       </li>
       <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
-        </Link>
+        {/* <Link href="#about"> */}
+        <NavLink href="#about">About</NavLink>
+        {/* </Link> */}
       </li>
     </Div2>
     <Div3>

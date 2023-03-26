@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { TopButton } from "./TopStyles";
+import React, { useEffect } from 'react';
+import { TopButton } from './TopStyles';
 
 export default function Top() {
   function TopEvent() {
@@ -12,19 +12,21 @@ export default function Top() {
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
     ) {
-      document.getElementById("topButton").style.visibility = "visible";
+      document.getElementById('topButton').style.visibility = 'visible';
     } else {
-      document.getElementById("topButton").style.visibility = "hidden";
+      document.getElementById('topButton').style.visibility = 'hidden';
     }
   }
 
   useEffect(() => {
-    window.onscroll = function () {
-      scrollFunction();
-    };
-    window.onload = function () {
-      scrollFunction();
-    };
+    if (typeof window !== 'undefined') {
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      window.onload = function () {
+        scrollFunction();
+      };
+    }
   }, []);
 
   //To make sure that this button is not visible at starting.
