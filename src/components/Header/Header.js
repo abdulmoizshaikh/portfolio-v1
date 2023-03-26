@@ -1,8 +1,8 @@
-import Link from "next/link";
-import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
-import { constants } from "../../constants/constants";
+import Link from 'next/link';
+import React from 'react';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { DiCssdeck } from 'react-icons/di';
+import { constants } from '../../constants/constants';
 
 import {
   Container,
@@ -11,16 +11,17 @@ import {
   Div3,
   NavLink,
   SocialIcons,
-} from "./HeaderStyles";
+} from './HeaderStyles';
 
 const { socialLinks } = constants;
 const Header = () => (
   <Container>
     <Div1>
-      <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "white" }}>
-          <DiCssdeck size="3rem" /> <span>Portfolio</span>
-        </a>
+      <Link
+        href="/"
+        style={{ display: 'flex', alignItems: 'center', color: 'white' }}
+      >
+        <DiCssdeck size="3rem" /> <span>Portfolio</span>
       </Link>
     </Div1>
     <Div2>
