@@ -19,11 +19,6 @@ const Footer = () => {
   const { socialLinks } = constants;
   return (
     <FooterWrapper>
-      <CompanyContainer>
-        <Slogan>
-          DISCUSS A PROJECT OR JUST WANT TO SAY HI MY INBOX IS OPEN FOR ALL
-        </Slogan>
-      </CompanyContainer>
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
