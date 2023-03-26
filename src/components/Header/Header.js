@@ -16,14 +16,14 @@ import {
 const { socialLinks } = constants;
 const Header = () => (
   <Container>
-    {/* <Div1>
+    <Div1>
       <Link
         href="/"
         style={{ display: 'flex', alignItems: 'center', color: 'white' }}
       >
         <DiCssdeck size="3rem" /> <span>Portfolio</span>
       </Link>
-    </Div1> */}
+    </Div1>
     <Div2>
       <li>
         {/* <Link href="#projects"> */}
