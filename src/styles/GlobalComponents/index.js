@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  // height: 100vh;
+  // justify-content: center;
+  // align-items: center;
+  // padding-top: 5%;
+`;
+
 export const Section = styled.section`
   display: ${(props) => (props.grid ? 'grid' : 'flex')};
   flex-direction: ${(props) => (props.row ? 'row' : 'column')};

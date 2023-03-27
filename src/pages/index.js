@@ -6,7 +6,7 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import ContactMe from '../components/ContactMe/ContactMe';
 import { Layout } from '../layout/Layout';
-import { Section } from '../styles/GlobalComponents';
+import { Container, Section } from '../styles/GlobalComponents';
 import { useRouter } from 'next/router';
 import ScrollToTopButton from '../components/TopButton/Top';
 
@@ -17,10 +17,12 @@ const Home = () => {
 
   return (
     <Layout>
-      <Section grid>
-        <Hero handleClick={onClickLearnMore} />
-        <BgAnimation />
-      </Section>
+      <Container>
+        <Section grid>
+          <Hero handleClick={onClickLearnMore} />
+          <BgAnimation />
+        </Section>
+      </Container>
       <Projects />
       <Technologies />
       <Timeline />
