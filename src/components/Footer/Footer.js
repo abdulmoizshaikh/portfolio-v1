@@ -1,25 +1,25 @@
-import React from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { constants } from "../../constants/constants";
+import React from 'react';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { constants } from '../../constants/constants';
 
-import { SocialIcons } from "../Header/HeaderStyles";
+import { SocialIcons } from '../Header/HeaderStyles';
 import {
   CompanyContainer,
   FooterWrapper,
-  LinkColumn,
-  LinkItem,
-  LinkList,
-  LinkTitle,
+  // LinkColumn,
+  // LinkItem,
+  // LinkList,
+  // LinkTitle,
   Slogan,
   SocialContainer,
   SocialIconsContainer,
-} from "./FooterStyles";
+} from './FooterStyles';
 
 const Footer = () => {
   const { socialLinks } = constants;
   return (
     <FooterWrapper>
-      <LinkList>
+      {/* <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
           <LinkItem href="tel:+92-304-5464742">+92-304-5464742</LinkItem>
@@ -30,7 +30,7 @@ const Footer = () => {
             muhammadmoizshaikh@gmail.com
           </LinkItem>
         </LinkColumn>
-      </LinkList>
+      </LinkList> */}
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>Innovating one project at a time</Slogan>

@@ -40,6 +40,9 @@ const Header = () => (
         <NavLink href="#about">About</NavLink>
         {/* </Link> */}
       </li>
+      <li>
+        <NavLink href="#contact">Contact Me</NavLink>
+      </li>
     </Div2>
     <Div3>
       <SocialIcons href={socialLinks.githubProfileUrl} target="_blank">
