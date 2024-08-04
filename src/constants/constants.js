@@ -9,8 +9,8 @@ export const constants = {
       //   'Hisaab is a digital ledger for everybody, for everybody, where they can easily record business transaction or personal finances. Anybody can input any lending or borrowing information on the app, and keep a track of their finances through the app.',
       // description:
       //   "Hisaab is an easy digital ledger by Retailo that simplifies bookkeeping for all business and personal use.",
-      // image: "/images/hisaab.jpeg",
-      image: '/images/hisaab2.png',
+      // image: "images/hisaab.jpeg",
+      image: 'images/hisaab2.png',
       tags: ['React Native', 'NestJs', 'Node'],
       source:
         'https://play.google.com/store/apps/details?id=com.app.retailohisaab&hl=en&gl=US',
@@ -21,7 +21,7 @@ export const constants = {
       description:
         'I have worked on this app when I was working for Retailo Technology on sub contract by my company. My role is to develop the pixel perfect and responsive across different devices mobile application using React Native, Redux, Styled component and intergrate APIs.',
       // 'The Retailo App is the number one choice of thousands of retailers for restocking their shops. Its easy to use features allow retailers from across MENAP to browse through thousands of products, make instant price comparisons and get them delivered the next day.',
-      image: '/images/retailo.png',
+      image: 'images/retailo.png',
       tags: ['React Native', 'NestJs', 'Node'],
       source:
         'https://play.google.com/store/apps/details?id=com.app.retailerapp&hl=en&gl=US',
@@ -32,7 +32,7 @@ export const constants = {
       description:
         'I have worked on this app when I was working with NextGeni. My role is to develop develop the backend of this app and make API endpoints for mobile developers to integrate into this App.',
       // 'ASKWHO is a location based group app that allows local people to share, learn and gain knowledge on the topics they care most about.',
-      image: '/images/askwho.png',
+      image: 'images/askwho.png',
       tags: ['Node', 'MySQL', 'AWS'],
       source:
         'https://play.google.com/store/apps/details?id=com.askwho.app&hl=en&gl=US',
@@ -47,7 +47,7 @@ export const constants = {
       // Play awesome postseason and tournament fantasy games, invite Family and Friends and enjoy the games! All gameplay is 100% free…no in-app purchases!
       // Create your private Gamerooms and customize rewards for each Gameroom.
       // This App is developed using React Native and I was working with Venture dive to develop this App for a foreign client`,
-      image: '/images/postleague.png',
+      image: 'images/postleague.png',
       tags: ['React Native', 'NodeJs', 'Android & IOS', 'Testflight'],
       source:
         'https://play.google.com/store/apps/details?id=com.postleagueapp&hl=en&gl=US',
@@ -67,7 +67,7 @@ export const constants = {
 
       // And that's it! A ValAir representative will be ready to serve you and handle all your parking needs.
       // In the meantime, follow us on Facebook (@valaircanada) and Instagram (@valairinc) to stay posted on launch details, promotions and much more!`,
-      image: '/images/valair.png',
+      image: 'images/valair.png',
       tags: ['ReactJs', 'React Native', 'NodeJs'],
       source: 'https://play.google.com/store/apps/details?id=com.valair.app',
     },
@@ -78,7 +78,7 @@ export const constants = {
         'This Website is develop using ReactJs, NextJs and backend on Nodejs, I have worked as a Full stack developer to fix issues in it and implement new freature on front end in it.',
       // description: `
       // We are the premier destination for finding and booking top-quality entertainers for any occasion. Whether you are planning a corporate event, a private party, or a public performance, we have the most diverse range of entertainers, including musicians, bands, DJs, comedians, saxophonists, and more. We make it easy to find and book the perfect entertainer for your event, with detailed profiles and reviews from past clients. So if you're looking to add some excitement and entertainment to your next event, look no further! Start browsing our entertainers today and book your favorite online in just a few clicks.`,
-      image: '/images/duvlive-logo.png',
+      image: 'images/duvlive-logo.png',
       tags: ['ReactJs', 'NextJs', 'NodeJs'],
       // tags: [
       //   'Sequelize',

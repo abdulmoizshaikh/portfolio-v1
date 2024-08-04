@@ -1,26 +1,26 @@
-import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import React from 'react';
+import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
-} from "../../styles/GlobalComponents";
+} from '../../styles/GlobalComponents';
 import {
   List,
   ListContainer,
   ListItem,
   ListParagraph,
   ListTitle,
-} from "./TechnologiesStyles";
+} from './TechnologiesStyles';
 
 const Technologies = () => (
   <Section id="tech">
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world. From
-      Back-end To Design
+      I've worked with a range a technologies in the web and mobile development
+      world. From Front-end to Back-end
     </SectionText>
     <List>
       <ListItem>
@@ -47,7 +47,7 @@ const Technologies = () => (
           </ListParagraph>
         </ListContainer>
       </ListItem>
-      {/* <ListItem>
+      <ListItem>
         <picture>
           <DiZend size="3rem" />
         </picture>
@@ -58,9 +58,9 @@ const Technologies = () => (
             tools like Figma
           </ListParagraph>
         </ListContainer>
-      </ListItem> */}
+      </ListItem>
     </List>
-    <SectionDivider colorAlt />
+    {/* <SectionDivider colorAlt /> */}
   </Section>
 );
 

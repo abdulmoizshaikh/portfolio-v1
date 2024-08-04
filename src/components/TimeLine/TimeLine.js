@@ -144,7 +144,7 @@ const Timeline = () => {
           );
         })}
       </CarouselButtons> */}
-      <SectionDivider />
+      <SectionDivider divider/>
     </Section>
   );
 };
