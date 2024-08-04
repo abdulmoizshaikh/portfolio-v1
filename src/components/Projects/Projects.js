@@ -12,6 +12,8 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  RomanOrderedList,
+  ListItem,
 } from './ProjectsStyles';
 import {
   Section,
@@ -34,7 +36,18 @@ const Projects = () => (
               <HeaderThree title="true">{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
-            <CardInfo className="card-info">{p.description}</CardInfo>
+
+            {/* <CardInfo className="card-info">
+              {p.description}
+            </CardInfo> */}
+
+            <RomanOrderedList>
+              {p.description &&
+                p.description.map((buttlePoint, idx) => (
+                  <ListItem key={idx}>• {buttlePoint}</ListItem>
+                ))}
+            </RomanOrderedList>
+
             <div>
               <TitleContent>Stack</TitleContent>
               <TagList>
@@ -43,6 +56,7 @@ const Projects = () => (
                 })}
               </TagList>
             </div>
+
             <UtilityList>
               {/* <ExternalLinks href={p.visit}>Code</ExternalLinks> */}
               <ExternalLinks href={p.source} target="_blank">
@@ -53,7 +67,7 @@ const Projects = () => (
         );
       })}
     </GridContainer>
-    <SectionDivider divider/>
+    <SectionDivider divider />
   </Section>
 );
 

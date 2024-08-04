@@ -3,10 +3,11 @@ export const constants = {
     {
       id: 0,
       title: 'Hisaab - Digital Credit Ledger',
-      description:
+      description: [
+        'Hisaab is a digital ledger for everybody, for everybody, where they can easily record business transaction or personal finances. Anybody can input any lending or borrowing information on the app, and keep a track of their finances through the app.',
         'I have worked on this app when I was working for Retailo Technology on sub contract by my company. My role is to develop the pixel perfect and responsive across different devices mobile application using React Native, Redux, Styled component and intergrate APIs created by backend developer.',
-      // description:
-      //   'Hisaab is a digital ledger for everybody, for everybody, where they can easily record business transaction or personal finances. Anybody can input any lending or borrowing information on the app, and keep a track of their finances through the app.',
+        'Hisaab app is Live on Google play store and it has 50k+ downloads',
+      ],
       // description:
       //   "Hisaab is an easy digital ledger by Retailo that simplifies bookkeeping for all business and personal use.",
       // image: "images/hisaab.jpeg",
@@ -18,9 +19,11 @@ export const constants = {
     {
       id: 1,
       title: 'Retailo - B2B Retailer App',
-      description:
+      description: [
+        'The Retailo App is the number one choice of thousands of retailers for restocking their shops. Its easy to use features allow retailers from across MENAP to browse through thousands of products, make instant price comparisons and get them delivered the next day.',
         'I have worked on this app when I was working for Retailo Technology on sub contract by my company. My role is to develop the pixel perfect and responsive across different devices mobile application using React Native, Redux, Styled component and intergrate APIs.',
-      // 'The Retailo App is the number one choice of thousands of retailers for restocking their shops. Its easy to use features allow retailers from across MENAP to browse through thousands of products, make instant price comparisons and get them delivered the next day.',
+        'Retailo app is Live on Google play store and it has 100k+ downloads',
+      ],
       image: 'images/retailo.png',
       tags: ['React Native', 'NestJs', 'Node'],
       source:
@@ -29,9 +32,11 @@ export const constants = {
     {
       id: 2,
       title: 'ASKWHO - Meet New People',
-      description:
+      description: [
+        'ASKWHO is a location based group app that allows local people to share, learn and gain knowledge on the topics they care most about.',
         'I have worked on this app when I was working with NextGeni. My role is to develop develop the backend of this app and make API endpoints for mobile developers to integrate into this App.',
-      // 'ASKWHO is a location based group app that allows local people to share, learn and gain knowledge on the topics they care most about.',
+        'ASKWHO app is Live on Google play store and it has 50k+ downloads',
+      ],
       image: 'images/askwho.png',
       tags: ['Node', 'MySQL', 'AWS'],
       source:
@@ -40,12 +45,12 @@ export const constants = {
     {
       id: 3,
       title: 'Post League',
-      description:
+      description: [
+        'PostLeague - the evolution of fantasy sports! \n Play awesome postseason and tournament fantasy games , invite Family and Friends and enjoy the games! All gameplay is 100% free…no in-app purchases!',
         'I have worked on this app when I was working for VentureDive on sub contract by my company. My role is to develop the pixel perfect and responsive across different devices mobile application using React Native for both Android and IOS platforms and intergrate APIs created by backend developer.',
+        'PostLeague app is Live on Google play store and it has 500+ downloads',
+      ],
       // 'I was working with Venture dive to develop this App for a foreign client',
-      // description: `PostLeague - the evolution of fantasy sports!
-      // Play awesome postseason and tournament fantasy games, invite Family and Friends and enjoy the games! All gameplay is 100% free…no in-app purchases!
-      // Create your private Gamerooms and customize rewards for each Gameroom.
       // This App is developed using React Native and I was working with Venture dive to develop this App for a foreign client`,
       image: 'images/postleague.png',
       tags: ['React Native', 'NodeJs', 'Android & IOS', 'Testflight'],
@@ -55,12 +60,14 @@ export const constants = {
     {
       id: 4,
       title: 'ValAir',
-      description:
+      description: [
+        'Val-Air, a valet parking service, will serve customers in and around major airports!',
         'I have worked on this app when I was doing Job in Capazyte, My role is to develop the pixel perfect and responsive across different devices mobile application using React Native, Redux, Styled component and intergrate APIs endpoints.',
+      ],
+
       // description: `
       // Val-Air, a valet parking service, will serve customers in and around major airports!
       // Convenient, flexible and affordable parking is available to you at your fingertips just by completing three simple steps:
-
       // 1. Download the ValAir app;
       // 2. Input your travel details (departure/arrival date, time, terminal, gate, etc.); and
       // 3. Drive your vehicle and luggage directly to your desired airport terminal/gate.
@@ -74,12 +81,13 @@ export const constants = {
     {
       id: 4,
       title: 'Duvlive',
-      description:
-        'This Website is develop using ReactJs, NextJs and backend on Nodejs, I have worked as a Full stack developer to fix issues in it and implement new freature on front end in it.',
-      // description: `
-      // We are the premier destination for finding and booking top-quality entertainers for any occasion. Whether you are planning a corporate event, a private party, or a public performance, we have the most diverse range of entertainers, including musicians, bands, DJs, comedians, saxophonists, and more. We make it easy to find and book the perfect entertainer for your event, with detailed profiles and reviews from past clients. So if you're looking to add some excitement and entertainment to your next event, look no further! Start browsing our entertainers today and book your favorite online in just a few clicks.`,
+
       image: 'images/duvlive-logo.png',
       tags: ['ReactJs', 'NextJs', 'NodeJs'],
+      description: [
+        "We are the premier destination for finding and booking top-quality entertainers for any occasion. Whether you are planning a corporate event, a private party, or a public performance, we have the most diverse range of entertainers, including musicians, bands, DJs, comedians, saxophonists, and more. We make it easy to find and book the perfect entertainer for your event, with detailed profiles and reviews from past clients. So if you're looking to add some excitement and entertainment to your next event, look no further! Start browsing our entertainers today and book your favorite online in just a few clicks.",
+        'This Website is develop using ReactJs, NextJs and backend on Nodejs, I have worked as a Full stack developer to fix issues in it and implement new freature on front end in it.',
+      ],
       // tags: [
       //   'Sequelize',
       //   'ExpressJS',

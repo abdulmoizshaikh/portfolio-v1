@@ -21,6 +21,7 @@ export const GridContainer = styled.section`
     padding-bottom: 0;
   }
 `;
+
 export const BlogCard = styled.div`
   min-height: 720px;
   border-radius: 10px;
@@ -102,4 +103,16 @@ export const TagList = styled.ul`
 export const Tag = styled.li`
   color: #d8bfbf;
   font-size: 1.5rem;
+`;
+
+// Styled component for the ordered list
+export const RomanOrderedList = styled.ol`
+  list-style-type: upper-roman;
+  padding: 0 50px;
+  text-align: left;
+`;
+
+// Styled component for list items (optional)
+export const ListItem = styled.li`
+  margin-bottom: 8px;
 `;
