@@ -1,5 +1,6 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { FaMobileAlt } from 'react-icons/fa';
 import {
   Section,
   SectionDivider,
@@ -31,7 +32,8 @@ const Technologies = () => (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experiece with <br />
-            React.js
+            React.js <br />
+            Vue.js
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -49,6 +51,18 @@ const Technologies = () => (
       </ListItem>
       <ListItem>
         <picture>
+          <FaMobileAlt size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Mobile</ListTitle>
+          <ListParagraph>
+            Experience with <br />
+            React Native
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      {/* <ListItem>
+        <picture>
           <DiZend size="3rem" />
         </picture>
         <ListContainer>
@@ -58,7 +72,7 @@ const Technologies = () => (
             tools like Figma
           </ListParagraph>
         </ListContainer>
-      </ListItem>
+      </ListItem> */}
     </List>
     <SectionDivider colorAlt />
   </Section>
