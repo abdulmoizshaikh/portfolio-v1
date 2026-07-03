@@ -1,31 +1,73 @@
-import React from 'react';
-
+import React from "react";
 import {
-  // Container,
   Section,
   SectionText,
   SectionTitle,
-} from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+} from "../../styles/GlobalComponents";
+import Button from "../../styles/GlobalComponents/Button";
+import {
+  LeftSection,
+  ButtonGroup,
+  MetricsContainer,
+  MetricItem,
+  HeroTag,
+} from "./HeroStyles";
 
-const Hero = (props) => (
-  // <Container>
-  <Section row nopadding>
-    <LeftSection>
-      <SectionTitle main center>
-        Hi all, I'm Moiz 👋
-      </SectionTitle>
-      <SectionText>
-        A passionate Full Stack Software Developer 🚀 having an experience of
-        building Web and Mobile applications with JavaScript / Reactjs / Nodejs
-        / React Native and some other cool libraries and frameworks.
-      </SectionText>
-      {/* <Button onClick={props.handleClick}>Learn More</Button> */}
-      <Button onClick={props.handleClick}>Contact Me</Button>
-    </LeftSection>
-  </Section>
-  // </Container>
-);
+const Hero = () => {
+  const scrollToProjects = () => {
+    const section = document.getElementById("projects");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const downloadResume = () => {
+    window.open("/resume.pdf", "_blank");
+  };
+
+  return (
+    <Section row nopadding>
+      <LeftSection>
+        <HeroTag>Hi, I'm Muhammad Moiz 👋</HeroTag>
+
+        <SectionTitle main>Senior Software Engineer</SectionTitle>
+
+        <SectionText>
+          Specializing in React, React Native, Next.js, and TypeScript. I build
+          scalable web and mobile products, modernize legacy systems, and
+          deliver reliable software that drives business growth.
+        </SectionText>
+
+        <MetricsContainer>
+          <MetricItem>
+            <strong>7+</strong>
+            <span>Years Experience</span>
+          </MetricItem>
+
+          <MetricItem>
+            <strong>15K+</strong>
+            <span>Active Users</span>
+          </MetricItem>
+
+          <MetricItem>
+            <strong>100K+</strong>
+            <span>Downloads</span>
+          </MetricItem>
+
+          <MetricItem>
+            <strong>20+</strong>
+            <span>Projects</span>
+          </MetricItem>
+        </MetricsContainer>
+
+        <ButtonGroup>
+          <Button onClick={scrollToProjects}>View My Work</Button>
+
+          <Button alt onClick={downloadResume}>
+            Download Resume
+          </Button>
+        </ButtonGroup>
+      </LeftSection>
+    </Section>
+  );
+};
 
 export default Hero;
