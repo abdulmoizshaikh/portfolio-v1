@@ -1,8 +1,8 @@
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { constants } from '../../constants/constants';
+import React from "react";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { constants } from "../../constants/constants";
 
-import { SocialIcons } from '../Header/HeaderStyles';
+import { SocialIcons } from "../Header/HeaderStyles";
 import {
   CompanyContainer,
   FooterWrapper,
@@ -13,10 +13,10 @@ import {
   Slogan,
   SocialContainer,
   SocialIconsContainer,
-} from './FooterStyles';
+} from "./FooterStyles";
 
 const Footer = () => {
-  const { socialLinks } = constants;
+  const { contact } = constants;
   return (
     <FooterWrapper>
       {/* <LinkList>
@@ -36,10 +36,10 @@ const Footer = () => {
           <Slogan>Innovating one project at a time</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href={socialLinks.githubProfileUrl} target="_blank">
+          <SocialIcons href={contact.github.url} target="_blank">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href={socialLinks.linkedInProfileUrl} target="_blank">
+          <SocialIcons href={contact.linkedin.url} target="_blank">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
           {/* <SocialIcons href="https://google.com">

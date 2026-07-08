@@ -5,6 +5,7 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
+import { constants } from "../../constants/constants";
 import {
   LeftSection,
   ButtonGroup,
@@ -13,54 +14,45 @@ import {
   HeroTag,
 } from "./HeroStyles";
 
+const { hero, profile } = constants;
+
 const Hero = () => {
   const scrollToProjects = () => {
-    const section = document.getElementById("projects");
-    section?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
   const downloadResume = () => {
-    window.open("/resume.pdf", "_blank");
+    const link = document.createElement("a");
+    link.href = "/resume.pdf";
+    link.download = `${profile.name.replace(/\s+/g, "_")}_Resume.pdf`;
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
     <Section row nopadding>
       <LeftSection>
-        <HeroTag>Hi, I'm Muhammad Moiz 👋</HeroTag>
-
-        <SectionTitle main>Senior Software Engineer</SectionTitle>
-
-        <SectionText>
-          Specializing in React, React Native, Next.js, and TypeScript. I build
-          scalable web and mobile products, modernize legacy systems, and
-          deliver reliable software that drives business growth.
+        <HeroTag>👋 Hi, I'm {profile.name}</HeroTag>
+        <SectionTitle main>
+          {profile.title}
+          <br />
+          {profile.subtitle}
+        </SectionTitle>
+        <SectionText style={{ maxWidth: "720px" }}>
+          {hero.description}
         </SectionText>
-
         <MetricsContainer>
-          <MetricItem>
-            <strong>7+</strong>
-            <span>Years Experience</span>
-          </MetricItem>
-
-          <MetricItem>
-            <strong>15K+</strong>
-            <span>Active Users</span>
-          </MetricItem>
-
-          <MetricItem>
-            <strong>100K+</strong>
-            <span>Downloads</span>
-          </MetricItem>
-
-          <MetricItem>
-            <strong>20+</strong>
-            <span>Projects</span>
-          </MetricItem>
+          {hero.metrics.map((metric) => (
+            <MetricItem key={metric.label}>
+              <strong>{metric.value}</strong>
+              <span>{metric.label}</span>
+            </MetricItem>
+          ))}
         </MetricsContainer>
-
         <ButtonGroup>
           <Button onClick={scrollToProjects}>View My Work</Button>
-
           <Button alt onClick={downloadResume}>
             Download Resume
           </Button>

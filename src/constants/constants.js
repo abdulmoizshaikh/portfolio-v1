@@ -1,123 +1,311 @@
 export const constants = {
-  projects: [
+  // Profile
+  profile: {
+    name: "Muhammad Moiz",
+    shortName: "Moiz",
+    title: "Senior Software Engineer",
+    subtitle: "React Native Architect",
+  },
+
+  // Hero
+  hero: {
+    description:
+      "Building enterprise-scale mobile platforms, backend services, and AI-powered products using React Native, TypeScript, Node.js, and AWS.",
+    metrics: [
+      {
+        value: "7+",
+        label: "Years Experience",
+      },
+      {
+        value: "15K+",
+        label: "Daily Active Users",
+      },
+      {
+        value: "300+",
+        label: "Organizations",
+      },
+      {
+        value: "100K+",
+        label: "App Downloads",
+      },
+    ],
+  },
+
+  // Technologies
+  technologies: [
     {
       id: 0,
-      title: 'Hisaab - Digital Credit Ledger',
-      description: [
-        'Hisaab is a digital ledger for everybody, for everybody, where they can easily record business transaction or personal finances. Anybody can input any lending or borrowing information on the app, and keep a track of their finances through the app.',
-        'I have worked on this app when I was working for Retailo Technology on sub contract by my company. My role is to develop the pixel perfect and responsive across different devices mobile application using React Native, Redux, Styled component and intergrate APIs created by backend developer.',
-        'Hisaab app is Live on Google play store and it has 50k+ downloads',
+      icon: "mobile",
+      title: "Mobile Engineering",
+      items: [
+        "React Native",
+        "TypeScript",
+        "Android • iOS",
+        "Kotlin",
+        "Fastlane",
       ],
-      // description:
-      //   "Hisaab is an easy digital ledger by Retailo that simplifies bookkeeping for all business and personal use.",
-      // image: "images/hisaab.jpeg",
-      image: 'images/hisaab2.png',
-      tags: ['React Native', 'NestJs', 'Node'],
-      source:
-        'https://play.google.com/store/apps/details?id=com.app.retailohisaab&hl=en&gl=US',
     },
     {
       id: 1,
-      title: 'Retailo - B2B Retailer App',
-      description: [
-        'The Retailo App is the number one choice of thousands of retailers for restocking their shops. Its easy to use features allow retailers from across MENAP to browse through thousands of products, make instant price comparisons and get them delivered the next day.',
-        'I have worked on this app when I was working for Retailo Technology on sub contract by my company. My role is to develop the pixel perfect and responsive across different devices mobile application using React Native, Redux, Styled component and intergrate APIs.',
-        'Retailo app is Live on Google play store and it has 100k+ downloads',
-      ],
-      image: 'images/retailo.png',
-      tags: ['React Native', 'NestJs', 'Node'],
-      source:
-        'https://play.google.com/store/apps/details?id=com.app.retailerapp&hl=en&gl=US',
+      icon: "react",
+      title: "Frontend",
+      items: ["React.js", "Next.js", "Redux", "Vue.js", "TypeScript"],
     },
     {
       id: 2,
-      title: 'ASKWHO - Meet New People',
-      description: [
-        'ASKWHO is a location based group app that allows local people to share, learn and gain knowledge on the topics they care most about.',
-        'I have worked on this app when I was working with NextGeni. My role is to develop develop the backend of this app and make API endpoints for mobile developers to integrate into this App.',
-        'ASKWHO app is Live on Google play store and it has 50k+ downloads',
+      icon: "node",
+      title: "Backend",
+      items: [
+        "Node.js",
+        "NestJS",
+        "Express",
+        "REST APIs",
+        "SQLite • PowerSync",
       ],
-      image: 'images/askwho.png',
-      tags: ['Node', 'MySQL', 'AWS'],
-      source:
-        'https://play.google.com/store/apps/details?id=com.askwho.app&hl=en&gl=US',
     },
     {
       id: 3,
-      title: 'Post League',
-      description: [
-        'PostLeague - the evolution of fantasy sports! \n Play awesome postseason and tournament fantasy games , invite Family and Friends and enjoy the games! All gameplay is 100% free…no in-app purchases!',
-        'I have worked on this app when I was working for VentureDive on sub contract by my company. My role is to develop the pixel perfect and responsive across different devices mobile application using React Native for both Android and IOS platforms and intergrate APIs created by backend developer.',
-        'PostLeague app is Live on Google play store and it has 500+ downloads',
-      ],
-      // 'I was working with Venture dive to develop this App for a foreign client',
-      // This App is developed using React Native and I was working with Venture dive to develop this App for a foreign client`,
-      image: 'images/postleague.png',
-      tags: ['React Native', 'NodeJs', 'Android & IOS', 'Testflight'],
-      source:
-        'https://play.google.com/store/apps/details?id=com.postleagueapp&hl=en&gl=US',
-    },
-    {
-      id: 4,
-      title: 'ValAir',
-      description: [
-        'Val-Air, a valet parking service, will serve customers in and around major airports!',
-        'I have worked on this app when I was doing Job in Capazyte, My role is to develop the pixel perfect and responsive across different devices mobile application using React Native, Redux, Styled component and intergrate APIs endpoints.',
-      ],
-
-      // description: `
-      // Val-Air, a valet parking service, will serve customers in and around major airports!
-      // Convenient, flexible and affordable parking is available to you at your fingertips just by completing three simple steps:
-      // 1. Download the ValAir app;
-      // 2. Input your travel details (departure/arrival date, time, terminal, gate, etc.); and
-      // 3. Drive your vehicle and luggage directly to your desired airport terminal/gate.
-
-      // And that's it! A ValAir representative will be ready to serve you and handle all your parking needs.
-      // In the meantime, follow us on Facebook (@valaircanada) and Instagram (@valairinc) to stay posted on launch details, promotions and much more!`,
-      image: 'images/valair.png',
-      tags: ['ReactJs', 'React Native', 'NodeJs'],
-      source: 'https://play.google.com/store/apps/details?id=com.valair.app',
-    },
-    {
-      id: 4,
-      title: 'Duvlive',
-
-      image: 'images/duvlive-logo.png',
-      tags: ['ReactJs', 'NextJs', 'NodeJs'],
-      description: [
-        "We are the premier destination for finding and booking top-quality entertainers for any occasion. Whether you are planning a corporate event, a private party, or a public performance, we have the most diverse range of entertainers, including musicians, bands, DJs, comedians, saxophonists, and more. We make it easy to find and book the perfect entertainer for your event, with detailed profiles and reviews from past clients. So if you're looking to add some excitement and entertainment to your next event, look no further! Start browsing our entertainers today and book your favorite online in just a few clicks.",
-        'This Website is develop using ReactJs, NextJs and backend on Nodejs, I have worked as a Full stack developer to fix issues in it and implement new freature on front end in it.',
-      ],
-      // tags: [
-      //   'Sequelize',
-      //   'ExpressJS',
-      //   'ReactJs',
-      //   'Bootstrap',
-      //   'Heroku',
-      //   'CSS',
-      //   'HTML5',
-      //   'Sass',
-      //   'Web Design',
-      //   'React',
-      //   'PostgreSQL',
-      //   'JavaScript',
-      //   'Node.js',
-      //   'Next.js',
-      // ],
-      source: 'https://www.duvlive.com/',
+      icon: "cloud",
+      title: "Cloud & DevOps",
+      items: ["AWS", "Docker", "GitLab CI/CD", "Sentry", "Crashlytics"],
     },
   ],
 
-  TimeLineData: [
-    { year: 2017, text: 'Started my journey' },
-    { year: 2018, text: 'Worked as a freelance developer' },
-    { year: 2019, text: 'Founded JavaScript Mastery' },
-    { year: 2020, text: 'Shared my projects with the world' },
-    { year: 2021, text: 'Started my own platform' },
+  // Projects
+  projects: [
+    {
+      id: 0,
+      title: "AI-Powered Frontline Operations Platform",
+      category: "Enterprise Mobile Platform",
+      image: "images/xenia-dashboard.webp",
+      tags: [
+        "React Native",
+        "TypeScript",
+        "PowerSync",
+        "SQLite",
+        "AWS",
+        "Sentry",
+      ],
+      description: [
+        "Led the architecture and development of a React Native platform serving 300+ enterprise organizations and 15K+ daily active users.",
+        "Designed an offline-first synchronization architecture using PowerSync and SQLite for low-connectivity environments.",
+        "Reduced crash rates by 50%, improved engineering velocity by 40%, and optimized application size by up to 20%.",
+      ],
+      source: null,
+    },
+    {
+      id: 1,
+      title: "Enterprise VoIP Calling Platform",
+      category: "Real-Time Communication",
+      image: "images/voip.webp",
+      tags: [
+        "React Native",
+        "Kotlin",
+        "Socket.IO",
+        "Linphone",
+        "SIP",
+        "PushKit",
+      ],
+      description: [
+        "Architected a production-grade VoIP platform used by enterprise customers across Android and iOS.",
+        "Integrated SIP calling, Linphone SDK, PushKit, CallKit, Bluetooth routing, and foreground services.",
+        "Migrated the application to React Native's New Architecture, improving performance by 40%.",
+      ],
+      source: null,
+    },
+    {
+      id: 2,
+      title: "DigitalTolk Interpreter Platform",
+      category: "Cross-Platform Marketplace",
+      image: "images/digitaltolk.webp",
+      tags: ["React Native", "Laravel", "Vue.js", "GitLab CI/CD", "Fastlane"],
+      description: [
+        "Developed a cross-platform interpreter booking platform supporting multiple international markets.",
+        "Implemented CI/CD pipelines reducing deployment time by 60%.",
+        "Improved deployment reliability to 99.8% through release automation.",
+      ],
+      source: "https://digitaltolk.com/",
+    },
+    {
+      id: 3,
+      title: "FinTech Payment Platform",
+      category: "Financial Technology",
+      image: "images/fintech.webp",
+      tags: ["React Native", "TypeScript", "NestJS", "Stripe", "AWS"],
+      description: [
+        "Led React Native development for a fintech platform with secure Stripe payment integration.",
+        "Designed scalable backend services using NestJS.",
+        "Deployed production infrastructure on AWS.",
+      ],
+      source: null,
+    },
+    {
+      id: 4,
+      title: "Education Collaboration Platform",
+      category: "Education Technology",
+      image: "images/education.png",
+      tags: ["React Native", "TypeScript", "NestJS", "CometChat"],
+      description: [
+        "Integrated real-time chat, voice, and video communication using CometChat SDK.",
+        "Implemented cross-platform support across Android and iOS.",
+        "Increased user engagement by more than 60%.",
+      ],
+      source: null,
+    },
+    {
+      id: 5,
+      title: "Blockchain Administration Dashboard",
+      category: "Enterprise Web Platform",
+      image: "images/blockchain.png",
+      tags: ["React", "Node.js", "MongoDB"],
+      description: [
+        "Developed blockchain administration tools supporting enterprise operations.",
+        "Built scalable MERN applications improving blockchain administration efficiency by 35%.",
+        "Designed reusable frontend components and backend APIs.",
+      ],
+      source: null,
+    },
   ],
 
-  socialLinks: {
-    githubProfileUrl: 'https://github.com/abdulmoizshaikh',
-    linkedInProfileUrl: 'https://linkedin.com/in/iammoiz',
+  // Experience
+  experience: [
+    {
+      id: 0,
+      company: "CodeForce",
+      role: "Senior Software Engineer",
+      period: "Mar 2026 – Jun 2026",
+      highlights: [
+        "Architected an enterprise React Native VoIP platform for Android and iOS.",
+        "Developed Kotlin native modules with SIP, Linphone, PushKit, CallKit, and Bluetooth routing.",
+        "Migrated the application to React Native's New Architecture, improving performance by 40%.",
+        "Enhanced real-time communication reliability for enterprise customers.",
+      ],
+    },
+    {
+      id: 1,
+      company: "Xenia",
+      role: "Senior Software Engineer",
+      period: "Sep 2024 – Feb 2026",
+      highlights: [
+        "Led mobile architecture for an AI-powered frontline operations platform.",
+        "Scaled the platform to support 300+ organizations and 15K+ daily active users.",
+        "Designed an offline-first synchronization architecture using PowerSync and SQLite.",
+        "Reduced crash rates by 50%, improved engineering velocity by 40%, and reduced app size by 20%.",
+      ],
+    },
+    {
+      id: 2,
+      company: "DigitalTolk",
+      role: "Senior Software Engineer",
+      period: "Jul 2023 – Sep 2024",
+      highlights: [
+        "Developed multilingual interpreter booking applications for international markets.",
+        "Implemented GitLab CI/CD pipelines and Fastlane release automation.",
+        "Reduced deployment time by 60% while increasing release reliability to 99.8%.",
+        "Collaborated with distributed engineering teams across Europe.",
+      ],
+    },
+    {
+      id: 3,
+      company: "Next Generation Innovations",
+      role: "Software Engineer",
+      period: "Jan 2020 – Jul 2023",
+      highlights: [
+        "Built fintech and education platforms using React Native and NestJS.",
+        "Designed backend services supporting secure payment processing with Stripe.",
+        "Integrated CometChat voice, video, and messaging capabilities.",
+        "Mentored junior engineers and contributed to engineering best practices.",
+      ],
+    },
+    {
+      id: 4,
+      company: "Xord",
+      role: "Software Engineer",
+      period: "Sep 2019 – Jan 2020",
+      highlights: [
+        "Built MERN-based blockchain administration platforms.",
+        "Developed scalable React applications and reusable UI components.",
+        "Contributed to backend APIs and MongoDB data models.",
+        "Improved blockchain administration efficiency by 35%.",
+      ],
+    },
+    {
+      id: 5,
+      company: "Capazyte",
+      role: "Software Engineer",
+      period: "Dec 2018 – Aug 2019",
+      highlights: [
+        "Built React and React Native applications for client projects.",
+        "Developed Node.js backend services and REST APIs.",
+        "Delivered production-ready web and mobile solutions.",
+        "Supported deployment workflows and ongoing maintenance.",
+      ],
+    },
+  ],
+
+  // Achievements
+  achievements: [
+    {
+      id: 0,
+      value: "15K+",
+      title: "Daily Active Users",
+      description:
+        "Scaled an AI-powered enterprise platform supporting frontline teams across 300+ organizations.",
+    },
+    {
+      id: 1,
+      value: "300+",
+      title: "Enterprise Organizations",
+      description:
+        "Designed and maintained production mobile platforms used by hundreds of enterprise customers.",
+    },
+    {
+      id: 2,
+      value: "50%",
+      title: "Crash Reduction",
+      description:
+        "Improved application stability through architecture modernization, monitoring, and performance optimization.",
+    },
+    {
+      id: 3,
+      value: "40%",
+      title: "Performance Improvement",
+      description:
+        "Migrated production applications to React Native's New Architecture and optimized runtime performance.",
+    },
+    {
+      id: 4,
+      value: "99.8%",
+      title: "Release Reliability",
+      description:
+        "Implemented GitLab CI/CD pipelines and Fastlane automation for consistent production releases.",
+    },
+    {
+      id: 5,
+      value: "100K+",
+      title: "App Downloads",
+      description:
+        "Delivered production-grade mobile applications used by customers across multiple international markets.",
+    },
+  ],
+
+  // Contact
+  contact: {
+    title: "Let's Build Something Great Together",
+    description:
+      "I'm currently open to Senior Software Engineer, Technical Lead, and React Native Architect opportunities. Whether you're hiring, building a product, or simply want to connect, I'd love to hear from you.",
+    email: "muhammadmoizshaikh@gmail.com",
+    phone: "+92 304 5464742",
+    phoneHref: "+923045464742",
+    location: "Karachi, Pakistan",
+    availability: "Open to Remote • Hybrid • Full-Time",
+    github: {
+      url: "https://github.com/abdulmoizshaikh",
+      text: "github.com/abdulmoizshaikh",
+    },
+    linkedin: {
+      url: "https://linkedin.com/in/iammoiz",
+      text: "linkedin.com/in/iammoiz",
+    },
   },
 };

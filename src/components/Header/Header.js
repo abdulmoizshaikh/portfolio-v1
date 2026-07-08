@@ -1,61 +1,76 @@
-import Link from 'next/link';
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
-import { constants } from '../../constants/constants';
+import Link from "next/link";
+import React from "react";
+
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+
+import { constants } from "../../constants/constants";
 
 import {
   Container,
-  Div1,
-  Div2,
-  Div3,
-  NavLink,
+  Logo,
+  Nav,
+  NavItem,
+  ResumeButton,
   SocialIcons,
-} from './HeaderStyles';
+  SocialSection,
+} from "./HeaderStyles";
 
-const { socialLinks } = constants;
-const Header = () => (
-  <Container>
-    <Div1>
-      <Link
-        href="/"
-        style={{ display: 'flex', alignItems: 'center', color: 'white' }}
-      >
-        <DiCssdeck size="3rem" /> <span>Portfolio</span>
-      </Link>
-    </Div1>
-    <Div2>
-      <li>
-        {/* <Link href="#projects"> */}
-        <NavLink href="#projects">Projects</NavLink>
-        {/* </Link> */}
-      </li>
-      <li>
-        {/* <Link href="#tech"> */}
-        <NavLink href="#tech">Technologies</NavLink>
-        {/* </Link> */}
-      </li>
-      <li>
-        {/* <Link href="#about"> */}
-        <NavLink href="#about">About</NavLink>
-        {/* </Link> */}
-      </li>
-      <li>
-        <NavLink href="#contact">Contact Me</NavLink>
-      </li>
-    </Div2>
-    <Div3>
-      <SocialIcons href={socialLinks.githubProfileUrl} target="_blank">
-        <AiFillGithub size="3rem" />
-      </SocialIcons>
-      <SocialIcons href={socialLinks.linkedInProfileUrl} target="_blank">
-        <AiFillLinkedin size="3rem" />
-      </SocialIcons>
-      {/* <SocialIcons href="https://google.com">
-        <AiFillInstagram size="3rem" />
-      </SocialIcons> */}
-    </Div3>
-  </Container>
-);
+const { contact, profile } = constants;
+
+const Header = () => {
+  return (
+    <Container>
+      <Logo>
+        <Link href="/">
+          <span>محمد {profile.shortName}</span>
+        </Link>
+      </Logo>
+
+      <Nav>
+        <li>
+          <NavItem href="#projects">Projects</NavItem>
+        </li>
+
+        <li>
+          <NavItem href="#experience">Experience</NavItem>
+        </li>
+
+        <li>
+          <NavItem href="#tech">Skills</NavItem>
+        </li>
+
+        <li>
+          <NavItem href="#achievements">Achievements</NavItem>
+        </li>
+
+        <li>
+          <NavItem href="#contact">Contact</NavItem>
+        </li>
+      </Nav>
+
+      <SocialSection>
+        <SocialIcons
+          href={contact.github.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillGithub size={26} />
+        </SocialIcons>
+
+        <SocialIcons
+          href={contact.linkedin.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillLinkedin size={26} />
+        </SocialIcons>
+
+        <ResumeButton href="/resume.pdf" download>
+          Resume
+        </ResumeButton>
+      </SocialSection>
+    </Container>
+  );
+};
 
 export default Header;

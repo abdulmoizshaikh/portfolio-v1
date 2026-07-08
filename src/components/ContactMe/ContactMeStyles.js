@@ -1,75 +1,114 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const LinkItem = styled.a`
-  font-size: 18px;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 16px;
-  transition: 0.3s ease;
-  position: relative;
-  left: 0;
+export const ContactGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const ContactCard = styled.div`
+  padding: 24px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 
   &:hover {
-    color: #fff;
-    left: 6px;
-  }
+    transform: translateY(-5px);
 
-  @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 16px;
-    line-height: 28px;
-    display: flex;
-  }
+    border-color: rgba(19, 173, 199, 0.35);
 
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 8px;
-    line-height: 14px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
+    box-shadow: 0 12px 30px rgba(19, 173, 199, 0.12);
   }
 `;
 
-export const LinkList = styled.ul`
-  // border-top: 1px solid rgba(255, 255, 255, 0.1);
-  display: grid;
-  grid-template-columns: repeat(3, minmax(85px, 220px));
-  gap: 40px;
-  padding: 0px 0 28px;
+export const ContactLabel = styled.h4`
+  margin-bottom: 12px;
 
-  @media ${(props) => props.theme.breakpoints.lg} {
-    padding: 32px 0 16px;
-  }
+  font-size: 13px;
 
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 100%;
-    padding: 32px 0 16px;
-    gap: 16px;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
-    padding: 32px 4px 16px;
-    gap: 5px;
-  }
-`;
+  font-weight: 700;
 
-export const LinkColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 220px;
-  width: 100%;
-`;
-export const LinkTitle = styled.h4`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 24px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 16px;
 
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 10px;
-    line-height: 12px;
-    margin-bottom: 8px;
+  letter-spacing: 0.08em;
+
+  color: rgba(255, 255, 255, 0.45);
+`;
+
+export const ContactValue = styled.a`
+  color: ${({ theme }) => theme.colors.white};
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  text-decoration: none;
+
+  word-break: break-word;
+
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.primary1};
+  }
+`;
+
+export const ButtonGroup = styled.div`
+  display: flex;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 48px;
+
+  flex-wrap: wrap;
+`;
+
+export const ContactButton = styled.a`
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 210px;
+
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  color: white;
+
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66%, #945dd6 100%);
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.92;
   }
 `;
