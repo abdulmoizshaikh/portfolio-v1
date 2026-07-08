@@ -15,7 +15,7 @@ import {
   SocialSection,
 } from "./HeaderStyles";
 
-const { contact, profile } = constants;
+const { contact, profile, navigation } = constants;
 
 const Header = () => {
   return (
@@ -27,25 +27,11 @@ const Header = () => {
       </Logo>
 
       <Nav>
-        <li>
-          <NavItem href="#projects">Projects</NavItem>
-        </li>
-
-        <li>
-          <NavItem href="#experience">Experience</NavItem>
-        </li>
-
-        <li>
-          <NavItem href="#tech">Skills</NavItem>
-        </li>
-
-        <li>
-          <NavItem href="#achievements">Achievements</NavItem>
-        </li>
-
-        <li>
-          <NavItem href="#contact">Contact</NavItem>
-        </li>
+        {navigation.map((item) => (
+          <li key={`${item.title}-${item.href}`}>
+            <NavItem href={item.href}>{item.title}</NavItem>
+          </li>
+        ))}
       </Nav>
 
       <SocialSection>
@@ -66,7 +52,7 @@ const Header = () => {
         </SocialIcons>
 
         <ResumeButton href="/resume.pdf" download>
-          Resume
+          Download Resume
         </ResumeButton>
       </SocialSection>
     </Container>

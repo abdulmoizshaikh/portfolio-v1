@@ -7,6 +7,30 @@ export const constants = {
     subtitle: "React Native Architect",
   },
 
+  // Navigation
+  navigation: [
+    {
+      title: "Projects",
+      href: "#projects",
+    },
+    {
+      title: "Experience",
+      href: "#experience",
+    },
+    {
+      title: "Skills",
+      href: "#tech",
+    },
+    {
+      title: "Achievements",
+      href: "#achievements",
+    },
+    {
+      title: "Contact",
+      href: "#contact",
+    },
+  ],
+
   // Hero
   hero: {
     description:
@@ -307,5 +331,11 @@ export const constants = {
       url: "https://linkedin.com/in/iammoiz",
       text: "linkedin.com/in/iammoiz",
     },
+  },
+
+  // Footer
+  footer: {
+    copyright: `© ${new Date().getFullYear()} Muhammad Moiz. All rights reserved.`,
+    builtWith: "Designed & Built with Next.js, React, and Styled Components",
   },
 };
