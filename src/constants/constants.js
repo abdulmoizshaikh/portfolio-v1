@@ -195,77 +195,100 @@ export const constants = {
   projects: [
     {
       id: 0,
-      title: "Hisaab - Digital Credit Ledger",
+      title: "Hisaab – Digital Credit Ledger",
+      category: "FinTech Mobile Application",
       image: "images/hisaab2.png",
-      tags: ["React Native", "NestJs", "Node"],
+      tags: [
+        "React Native",
+        "Redux",
+        "Styled Components",
+        "REST APIs",
+        "Node.js",
+      ],
       description: [
-        "Built a digital ledger app for recording business and personal transactions, developed while on contract for Retailo Technology.",
-        "Implemented pixel-perfect, responsive UI across devices using React Native, Redux, and styled-components.",
-        "Integrated backend APIs; live on Google Play with 50K+ downloads.",
+        "Developed a production-grade React Native application for digital credit management used by small and medium-sized businesses.",
+        "Built responsive, pixel-perfect user interfaces across Android and iOS while integrating backend APIs.",
+        "Collaborated closely with backend engineers and product teams to deliver scalable financial features.",
       ],
       source:
         "https://play.google.com/store/apps/details?id=com.app.retailohisaab&hl=en&gl=US",
     },
+
     {
       id: 1,
-      title: "Retailo - B2B Retailer App",
+      title: "Retailo – B2B Retail Platform",
+      category: "Enterprise Commerce",
       image: "images/retailo.png",
-      tags: ["React Native", "NestJs", "Node"],
+      tags: [
+        "React Native",
+        "Redux",
+        "Styled Components",
+        "REST APIs",
+        "Node.js",
+      ],
       description: [
-        "Built a B2B restocking app used by thousands of retailers across MENAP, developed while on contract for Retailo Technology.",
-        "Implemented pixel-perfect, responsive UI across devices using React Native, Redux, and styled-components.",
-        "Integrated product browsing and price comparison APIs; live on Google Play with 100K+ downloads.",
+        "Contributed to Retailo's B2B commerce platform used by retailers for inventory ordering and business operations.",
+        "Implemented high-performance React Native screens with responsive UI across multiple devices.",
+        "Integrated backend services and optimized application performance for production deployments.",
       ],
       source:
         "https://play.google.com/store/apps/details?id=com.app.retailerapp&hl=en&gl=US",
     },
+
     {
       id: 2,
-      title: "ASKWHO - Meet New People",
+      title: "ASKWHO",
+      category: "Social Networking Platform",
       image: "images/askwho.png",
-      tags: ["Node", "MySQL", "AWS"],
+      tags: ["Node.js", "Express", "MySQL", "AWS", "REST APIs"],
       description: [
-        "Built backend services for a location-based app connecting people to share and learn from local communities.",
-        "Designed and developed REST API endpoints consumed by the mobile app team.",
-        "Live on Google Play with 50K+ downloads.",
+        "Designed and developed backend services powering a social networking mobile application.",
+        "Built secure REST APIs, database models, and business logic supporting mobile clients.",
+        "Deployed backend infrastructure on AWS while improving API performance and reliability.",
       ],
       source:
         "https://play.google.com/store/apps/details?id=com.askwho.app&hl=en&gl=US",
     },
+
     {
       id: 3,
       title: "Post League",
+      category: "Sports Social Platform",
       image: "images/postleague.png",
-      tags: ["React Native", "NodeJs", "Android & IOS", "Testflight"],
+      tags: ["React Native", "Android", "iOS", "TestFlight", "REST APIs"],
       description: [
-        "Built a free-to-play fantasy sports app for postseason and tournament games, developed on contract for VentureDive.",
-        "Implemented pixel-perfect, responsive UI for both Android and iOS using React Native.",
-        "Integrated backend APIs; shipped to Google Play and TestFlight.",
+        "Developed cross-platform mobile features using React Native for Android and iOS.",
+        "Built reusable UI components and integrated production backend APIs.",
+        "Participated in testing, release preparation, and App Store/TestFlight deployments.",
       ],
       source:
         "https://play.google.com/store/apps/details?id=com.postleagueapp&hl=en&gl=US",
     },
+
     {
       id: 4,
       title: "ValAir",
+      category: "Travel & Aviation",
       image: "images/valair.png",
-      tags: ["ReactJs", "React Native", "NodeJs"],
+      tags: ["React Native", "React.js", "Redux", "Node.js"],
       description: [
-        "Built a valet parking app serving customers at major airports, developed while at Capazyte.",
-        "Implemented pixel-perfect, responsive UI across devices using React Native, Redux, and styled-components.",
-        "Integrated backend API endpoints for booking and trip details.",
+        "Developed production-ready React Native features for a travel and aviation platform.",
+        "Built responsive mobile interfaces and integrated backend APIs.",
+        "Worked closely with designers and backend engineers to deliver new customer-facing functionality.",
       ],
       source: "https://play.google.com/store/apps/details?id=com.valair.app",
     },
+
     {
       id: 5,
       title: "Duvlive",
+      category: "Media & Entertainment",
       image: "images/duvlive-logo.png",
-      tags: ["ReactJs", "NextJs", "NodeJs"],
+      tags: ["Next.js", "React", "Node.js", "JavaScript"],
       description: [
-        "Contributed as a full-stack developer to a platform for discovering and booking entertainers for events.",
-        "Fixed production issues and implemented new features across the React and Next.js frontend.",
-        "Worked across a Node.js backend supporting the live product.",
+        "Contributed as a Full-Stack Engineer to a live entertainment and ticketing platform.",
+        "Implemented new frontend features, resolved production issues, and enhanced overall application stability.",
+        "Collaborated across the stack using React, Next.js, and Node.js to improve user experience.",
       ],
       source: "https://www.duvlive.com/",
     },
