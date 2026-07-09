@@ -39,3 +39,9 @@ https://www.youtube.com/watch?v=OPaLnMw2i_0&list=PL6QREj8te1P7gixBDSU8JLvQndTEEX
   Nahal M.
   I love what I do and I do what my clients loves, in results I manage to Develop top notch, thoughtful and purposeful Websites
   https://www.innovatingnodestech.ga/
+
+- Hassan Khalid Portfolio Website
+  https://hassankhalid.dev/
+
+- Bilal Raza Portfolio Website
+  https://www.bilalattari.com/
