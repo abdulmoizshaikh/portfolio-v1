@@ -65,15 +65,15 @@ const Header = () => {
             <AiFillLinkedin size={26} />
           </SocialIcons>
 
-          <ResumeButton href="/resume.pdf" download>
+          {/* <ResumeButton href="/resume.pdf" download>
             Download Resume
-          </ResumeButton>
+          </ResumeButton> */}
         </SocialSection>
 
         <MobileControls>
-          <MobileResumeButton href="/resume.pdf" download>
+          {/* <MobileResumeButton href="/resume.pdf" download>
             Resume
-          </MobileResumeButton>
+          </MobileResumeButton> */}
 
           <MenuToggle onClick={toggleMenu} aria-label="Toggle navigation menu">
             {isOpen ? <HiX size={22} /> : <HiMenu size={22} />}

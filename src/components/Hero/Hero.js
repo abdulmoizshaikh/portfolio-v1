@@ -53,9 +53,9 @@ const Hero = () => {
         </MetricsContainer>
         <ButtonGroup>
           <Button onClick={scrollToProjects}>View My Work</Button>
-          <Button alt onClick={downloadResume}>
+          {/* <Button alt onClick={downloadResume}>
             Download Resume
-          </Button>
+          </Button> */}
         </ButtonGroup>
       </LeftSection>
     </Section>

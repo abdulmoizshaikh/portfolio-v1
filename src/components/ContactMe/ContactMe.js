@@ -97,9 +97,9 @@ const ContactMe = () => {
       </ContactGrid>
 
       <ButtonGroup>
-        <ContactButton href="/resume.pdf" download onClick={downloadResume}>
+        {/* <ContactButton href="/resume.pdf" download onClick={downloadResume}>
           Download Resume
-        </ContactButton>
+        </ContactButton> */}
 
         <ContactButton href={`mailto:${contact.email}`}>Email Me</ContactButton>
       </ButtonGroup>
