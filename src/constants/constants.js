@@ -195,6 +195,42 @@ export const constants = {
   projects: [
     {
       id: 0,
+      title: "Xenia – AI-Powered Frontline Operations Platform",
+      category: "Enterprise SaaS",
+      image: "images/xenia.png",
+      tags: [
+        "React Native",
+        "TypeScript",
+        "PowerSync",
+        "SQLite",
+        "AWS",
+        "Sentry",
+      ],
+      description: [
+        "Led the architecture and development of Xenia's enterprise mobile platform serving 300+ organizations and 15K+ daily active users.",
+        "Designed an offline-first synchronization architecture using PowerSync and SQLite for low-connectivity environments.",
+        "Reduced crash rates by 50%, improved engineering velocity by 40%, and optimized application size by 20%.",
+      ],
+      source: "https://apps.apple.com/nz/app/xenia-team/id1605760701",
+    },
+
+    {
+      id: 1,
+      title: "DigitalTolk Interpreter Platform",
+      category: "Cross-Platform Marketplace",
+      image: "images/digitaltolk.png",
+      tags: ["React Native", "Laravel", "Vue.js", "GitLab CI/CD", "Fastlane"],
+      description: [
+        "Developed multilingual interpreter booking applications supporting multiple international markets.",
+        "Implemented GitLab CI/CD pipelines and Fastlane release automation.",
+        "Reduced deployment time by 60% while increasing production release reliability to 99.8%.",
+      ],
+      source:
+        "https://play.google.com/store/apps/details?id=se.digitaltolk&hl=en",
+    },
+
+    {
+      id: 2,
       title: "Hisaab – Digital Credit Ledger",
       category: "FinTech Mobile Application",
       image: "images/hisaab2.png",
@@ -215,7 +251,7 @@ export const constants = {
     },
 
     {
-      id: 1,
+      id: 3,
       title: "Retailo – B2B Retail Platform",
       category: "Enterprise Commerce",
       image: "images/retailo.png",
@@ -236,7 +272,7 @@ export const constants = {
     },
 
     {
-      id: 2,
+      id: 4,
       title: "ASKWHO",
       category: "Social Networking Platform",
       image: "images/askwho.png",
@@ -251,7 +287,7 @@ export const constants = {
     },
 
     {
-      id: 3,
+      id: 5,
       title: "Post League",
       category: "Sports Social Platform",
       image: "images/postleague.png",
@@ -266,7 +302,7 @@ export const constants = {
     },
 
     {
-      id: 4,
+      id: 6,
       title: "ValAir",
       category: "Travel & Aviation",
       image: "images/valair.png",
@@ -280,7 +316,7 @@ export const constants = {
     },
 
     {
-      id: 5,
+      id: 7,
       title: "Duvlive",
       category: "Media & Entertainment",
       image: "images/duvlive-logo.png",
