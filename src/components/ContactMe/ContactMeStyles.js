@@ -52,7 +52,7 @@ export const ContactLabel = styled.h4`
 `;
 
 export const ContactValue = styled.a`
-  color: ${({ theme }) => theme.colors.white};
+  color: rgba(255, 255, 255, 0.88);
 
   font-size: 16px;
 
@@ -63,6 +63,10 @@ export const ContactValue = styled.a`
   word-break: break-word;
 
   transition: color 0.25s ease;
+
+  &:visited {
+    color: rgba(255, 255, 255, 0.88);
+  }
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary1};
