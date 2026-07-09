@@ -27,6 +27,9 @@ import { constants } from "../../constants/constants";
 
 const { projects } = constants;
 
+const FALLBACK_IMAGE =
+  "https://placehold.co/640x400/1a1a2e/ffffff?text=Project";
+
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionTitle main>Featured Work</SectionTitle>
@@ -39,7 +42,8 @@ const Projects = () => (
             alt={project.title}
             loading="lazy"
             onError={(e) => {
-              e.currentTarget.src = "/images/project-placeholder.webp";
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = FALLBACK_IMAGE;
             }}
           />
 
