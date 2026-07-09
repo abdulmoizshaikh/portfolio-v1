@@ -199,7 +199,9 @@ export const constants = {
       image: "images/hisaab2.png",
       tags: ["React Native", "NestJs", "Node"],
       description: [
-        "I have worked on this app when I was working for Retailo Technology on sub contract by my company. My role is to develop the pixel perfect and responsive across different devices mobile application using React Native, Redux, Styled component and intergrate APIs created by backend developer.",
+        "Built a digital ledger app for recording business and personal transactions, developed while on contract for Retailo Technology.",
+        "Implemented pixel-perfect, responsive UI across devices using React Native, Redux, and styled-components.",
+        "Integrated backend APIs; live on Google Play with 50K+ downloads.",
       ],
       source:
         "https://play.google.com/store/apps/details?id=com.app.retailohisaab&hl=en&gl=US",
@@ -210,7 +212,9 @@ export const constants = {
       image: "images/retailo.png",
       tags: ["React Native", "NestJs", "Node"],
       description: [
-        "I have worked on this app when I was working for Retailo Technology on sub contract by my company. My role is to develop the pixel perfect and responsive across different devices mobile application using React Native, Redux, Styled component and intergrate APIs.",
+        "Built a B2B restocking app used by thousands of retailers across MENAP, developed while on contract for Retailo Technology.",
+        "Implemented pixel-perfect, responsive UI across devices using React Native, Redux, and styled-components.",
+        "Integrated product browsing and price comparison APIs; live on Google Play with 100K+ downloads.",
       ],
       source:
         "https://play.google.com/store/apps/details?id=com.app.retailerapp&hl=en&gl=US",
@@ -221,7 +225,9 @@ export const constants = {
       image: "images/askwho.png",
       tags: ["Node", "MySQL", "AWS"],
       description: [
-        "I have worked on this app when I was working with NextGeni. My role is to develop develop the backend of this app and make API endpoints for mobile developers to integrate into this App.",
+        "Built backend services for a location-based app connecting people to share and learn from local communities.",
+        "Designed and developed REST API endpoints consumed by the mobile app team.",
+        "Live on Google Play with 50K+ downloads.",
       ],
       source:
         "https://play.google.com/store/apps/details?id=com.askwho.app&hl=en&gl=US",
@@ -232,9 +238,10 @@ export const constants = {
       image: "images/postleague.png",
       tags: ["React Native", "NodeJs", "Android & IOS", "Testflight"],
       description: [
-        "I have worked on this app when I was working for VentureDive on sub contract by my company. My role is to develop the pixel perfect and responsive across different devices mobile application using React Native for both Android and IOS platforms and intergrate APIs created by backend developer.",
+        "Built a free-to-play fantasy sports app for postseason and tournament games, developed on contract for VentureDive.",
+        "Implemented pixel-perfect, responsive UI for both Android and iOS using React Native.",
+        "Integrated backend APIs; shipped to Google Play and TestFlight.",
       ],
-
       source:
         "https://play.google.com/store/apps/details?id=com.postleagueapp&hl=en&gl=US",
     },
@@ -244,7 +251,9 @@ export const constants = {
       image: "images/valair.png",
       tags: ["ReactJs", "React Native", "NodeJs"],
       description: [
-        "I have worked on this app when I was doing Job in Capazyte, My role is to develop the pixel perfect and responsive across different devices mobile application using React Native, Redux, Styled component and intergrate APIs endpoints.",
+        "Built a valet parking app serving customers at major airports, developed while at Capazyte.",
+        "Implemented pixel-perfect, responsive UI across devices using React Native, Redux, and styled-components.",
+        "Integrated backend API endpoints for booking and trip details.",
       ],
       source: "https://play.google.com/store/apps/details?id=com.valair.app",
     },
@@ -254,7 +263,9 @@ export const constants = {
       image: "images/duvlive-logo.png",
       tags: ["ReactJs", "NextJs", "NodeJs"],
       description: [
-        "This Website is develop using ReactJs, NextJs and backend on Nodejs, I have worked as a Full stack developer to fix issues in it and implement new freature on front end in it.",
+        "Contributed as a full-stack developer to a platform for discovering and booking entertainers for events.",
+        "Fixed production issues and implemented new features across the React and Next.js frontend.",
+        "Worked across a Node.js backend supporting the live product.",
       ],
       source: "https://www.duvlive.com/",
     },
