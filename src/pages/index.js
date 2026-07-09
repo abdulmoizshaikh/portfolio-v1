@@ -12,23 +12,22 @@ import Achievements from "../components/Achievements/Achievements";
 const Home = () => {
   return (
     <Layout>
-      <Container>
+      {/* <Container>
         <Section grid>
           <Hero />
           <BgAnimation />
         </Section>
-      </Container>
+      </Container> */}
 
-      <Technologies />
+      {/* <Technologies /> */}
 
       <Projects />
 
-      <Experience />
+      {/* <Experience /> */}
 
-      {/* Enable after Contact section redesign */}
-      <Achievements />
+      {/* <Achievements /> */}
 
-      <ContactMe />
+      {/* <ContactMe /> */}
 
       <ScrollToTopButton />
     </Layout>
