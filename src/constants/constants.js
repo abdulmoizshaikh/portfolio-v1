@@ -10,16 +10,16 @@ export const constants = {
   // Navigation
   navigation: [
     {
+      title: "Skills",
+      href: "#tech",
+    },
+    {
       title: "Projects",
       href: "#projects",
     },
     {
       title: "Experience",
       href: "#experience",
-    },
-    {
-      title: "Skills",
-      href: "#tech",
     },
     {
       title: "Achievements",

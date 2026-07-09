@@ -7,6 +7,7 @@ import ContactMe from "../components/ContactMe/ContactMe";
 import ScrollToTopButton from "../components/TopButton/Top";
 import { Layout } from "../layout/Layout";
 import { Container, Section } from "../styles/GlobalComponents";
+import Achievements from "../components/Achievements/Achievements";
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
       <Experience />
 
       {/* Enable after Contact section redesign */}
-      {/* <Achievements /> */}
+      <Achievements />
 
       <ContactMe />
 
