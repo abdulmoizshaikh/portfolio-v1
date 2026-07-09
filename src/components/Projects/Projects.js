@@ -1,59 +1,92 @@
-import React from 'react';
+import React from "react";
 
 import {
   BlogCard,
-  CardInfo,
+  CardSectionTitle,
+  DescriptionItem,
+  DescriptionList,
   ExternalLinks,
   GridContainer,
   HeaderThree,
   Hr,
+  Img,
+  ProjectCategory,
   Tag,
   TagList,
   TitleContent,
   UtilityList,
-  Img,
-} from './ProjectsStyles';
+} from "./ProjectsStyles";
+
 import {
   Section,
   SectionDivider,
   SectionTitle,
-} from '../../styles/GlobalComponents';
-import { constants } from '../../constants/constants';
+} from "../../styles/GlobalComponents";
+
+import { constants } from "../../constants/constants";
 
 const { projects } = constants;
 
+const FALLBACK_IMAGE =
+  "https://placehold.co/640x400/1a1a2e/ffffff?text=Project";
+
 const Projects = () => (
   <Section nopadding id="projects">
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionTitle main>Featured Work</SectionTitle>
+
     <GridContainer>
-      {projects.map((p, i) => {
-        return (
-          <BlogCard key={i}>
-            <Img src={p.image} />
-            <TitleContent>
-              <HeaderThree title="true">{p.title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo className="card-info">{p.description}</CardInfo>
-            <div>
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {p.tags.map((t, i) => {
-                  return <Tag key={i}>{t}</Tag>;
-                })}
-              </TagList>
-            </div>
+      {projects.map((project) => (
+        <BlogCard key={project.id}>
+          <Img
+            src={project.image}
+            alt={project.title}
+            loading="lazy"
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = FALLBACK_IMAGE;
+            }}
+          />
+
+          <TitleContent>
+            <HeaderThree>{project.title}</HeaderThree>
+
+            {project.category && (
+              <ProjectCategory>{project.category}</ProjectCategory>
+            )}
+
+            <Hr />
+          </TitleContent>
+
+          <DescriptionList>
+            {project.description?.map((bulletPoint) => (
+              <DescriptionItem key={bulletPoint}>{bulletPoint}</DescriptionItem>
+            ))}
+          </DescriptionList>
+
+          <CardSectionTitle>Technologies</CardSectionTitle>
+
+          <TagList>
+            {project.tags.map((tag) => (
+              <Tag key={tag}>{tag}</Tag>
+            ))}
+          </TagList>
+
+          {project.source && (
             <UtilityList>
-              {/* <ExternalLinks href={p.visit}>Code</ExternalLinks> */}
-              <ExternalLinks href={p.source} target="_blank">
-                Source
+              <ExternalLinks
+                href={project.source}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
               </ExternalLinks>
             </UtilityList>
-          </BlogCard>
-        );
-      })}
+          )}
+        </BlogCard>
+      ))}
     </GridContainer>
-    <SectionDivider divider/>
+
+    <SectionDivider divider />
   </Section>
 );
 

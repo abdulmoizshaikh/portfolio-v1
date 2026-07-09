@@ -1,33 +1,34 @@
-// import Acomplishments from "../components/Acomplishments/Acomplishments";
-import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
-import Hero from '../components/Hero/Hero';
-import Projects from '../components/Projects/Projects';
-import Technologies from '../components/Technologies/Technologies';
-import Timeline from '../components/TimeLine/TimeLine';
-import ContactMe from '../components/ContactMe/ContactMe';
-import { Layout } from '../layout/Layout';
-import { Container, Section } from '../styles/GlobalComponents';
-import { useRouter } from 'next/router';
-import ScrollToTopButton from '../components/TopButton/Top';
+import BgAnimation from "../components/BackgrooundAnimation/BackgroundAnimation";
+import Hero from "../components/Hero/Hero";
+import Projects from "../components/Projects/Projects";
+import Technologies from "../components/Technologies/Technologies";
+import Experience from "../components/Experience/Experience";
+import ContactMe from "../components/ContactMe/ContactMe";
+import ScrollToTopButton from "../components/TopButton/Top";
+import { Layout } from "../layout/Layout";
+import { Container, Section } from "../styles/GlobalComponents";
+import Achievements from "../components/Achievements/Achievements";
 
 const Home = () => {
-  const router = useRouter();
-  // const onClickLearnMore = () => router.push('/#about');
-  const onClickLearnMore = () => router.push('/#contact');
-
   return (
     <Layout>
       <Container>
         <Section grid>
-          <Hero handleClick={onClickLearnMore} />
+          <Hero />
           <BgAnimation />
         </Section>
       </Container>
+
       <Technologies />
+
       <Projects />
-      <Timeline />
+
+      <Experience />
+
+      <Achievements />
+
       <ContactMe />
-      {/* <Acomplishments /> */}
+
       <ScrollToTopButton />
     </Layout>
   );

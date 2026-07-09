@@ -1,79 +1,67 @@
-import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { FaMobileAlt } from 'react-icons/fa';
+import React from "react";
+import { DiNodejsSmall, DiReact } from "react-icons/di";
+import { FaCloud, FaMobileAlt } from "react-icons/fa";
+
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
-} from '../../styles/GlobalComponents';
+} from "../../styles/GlobalComponents";
+
+import { constants } from "../../constants/constants";
+
 import {
   List,
   ListContainer,
   ListItem,
   ListParagraph,
   ListTitle,
-} from './TechnologiesStyles';
+} from "./TechnologiesStyles";
+
+const { technologies } = constants;
+
+const icons = {
+  mobile: <FaMobileAlt size="3rem" />,
+  react: <DiReact size="3rem" />,
+  node: <DiNodejsSmall size="3rem" />,
+  cloud: <FaCloud size="3rem" />,
+};
 
 const Technologies = () => (
   <Section id="tech">
     <SectionDivider divider />
-    <SectionTitle>Technologies</SectionTitle>
+
+    <SectionTitle>Technical Expertise</SectionTitle>
+
     <SectionText>
-      I've worked with a range a technologies in the web and mobile development
-      world. From Front-end to Back-end
+      I design and build scalable mobile, web, and backend platforms using
+      modern technologies across the entire software development lifecycle—from
+      architecture and implementation to deployment, monitoring, and production
+      support.
     </SectionText>
+
     <List>
-      <ListItem>
-        <picture>
-          <DiReact size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experiece with <br />
-            React.js <br />
-            Vue.js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node and Databases
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <FaMobileAlt size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Mobile</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            React Native
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      {/* <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            tools like Figma
-          </ListParagraph>
-        </ListContainer>
-      </ListItem> */}
+      {technologies.map(({ id, icon, title, items }) => (
+        <ListItem key={id}>
+          <picture>{icons[icon]}</picture>
+
+          <ListContainer>
+            <ListTitle>{title}</ListTitle>
+
+            <ListParagraph>
+              {items.map((item) => (
+                <React.Fragment key={item}>
+                  {item}
+                  <br />
+                </React.Fragment>
+              ))}
+            </ListParagraph>
+          </ListContainer>
+        </ListItem>
+      ))}
     </List>
+
     <SectionDivider colorAlt />
   </Section>
 );

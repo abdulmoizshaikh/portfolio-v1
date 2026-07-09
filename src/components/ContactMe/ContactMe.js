@@ -1,32 +1,110 @@
-import React from 'react';
+import React from "react";
+
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
-} from '../../styles/GlobalComponents';
-import { LinkItem, LinkColumn, LinkList, LinkTitle } from './ContactMeStyles';
+} from "../../styles/GlobalComponents";
+
+import { constants } from "../../constants/constants";
+
+import {
+  ContactGrid,
+  ContactCard,
+  ContactLabel,
+  ContactValue,
+  ButtonGroup,
+  ContactButton,
+} from "./ContactMeStyles";
+
+const { contact } = constants;
 
 const ContactMe = () => {
+  // const downloadResume = () => {
+  //   const link = document.createElement("a");
+
+  //   link.href = "/resume.pdf";
+  //   link.download = "Muhammad_Moiz_Resume.pdf";
+
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
+
   return (
     <Section id="contact">
-      <SectionTitle>Contact Me ☎️</SectionTitle>
-      <SectionText>
-        DISCUSS A PROJECT OR JUST WANT TO SAY HI MY INBOX IS OPEN FOR ALL
-      </SectionText>
-      <LinkList>
-        <LinkColumn>
-          <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:+92-304-5464742">+92-304-5464742</LinkItem>
-        </LinkColumn>
-        <LinkColumn>
-          <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:muhammadmoizshaikh@gmail.com">
-            muhammadmoizshaikh@gmail.com
-          </LinkItem>
-        </LinkColumn>
-      </LinkList>
-      <SectionDivider />
+      <SectionTitle>{contact.title}</SectionTitle>
+
+      <SectionText>{contact.description}</SectionText>
+
+      <ContactGrid>
+        <ContactCard>
+          <ContactLabel>Email</ContactLabel>
+
+          <ContactValue href={`mailto:${contact.email}`}>
+            {contact.email}
+          </ContactValue>
+        </ContactCard>
+
+        <ContactCard>
+          <ContactLabel>Phone</ContactLabel>
+
+          <ContactValue href={`tel:${contact.phoneHref}`}>
+            {contact.phone}
+          </ContactValue>
+        </ContactCard>
+
+        <ContactCard>
+          <ContactLabel>Location</ContactLabel>
+
+          <ContactValue as="span" style={{ cursor: "default" }}>
+            {contact.location}
+          </ContactValue>
+        </ContactCard>
+
+        <ContactCard>
+          <ContactLabel>LinkedIn</ContactLabel>
+
+          <ContactValue
+            href={contact.linkedin.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {contact.linkedin.text}
+          </ContactValue>
+        </ContactCard>
+
+        <ContactCard>
+          <ContactLabel>GitHub</ContactLabel>
+
+          <ContactValue
+            href={contact.github.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {contact.github.text}
+          </ContactValue>
+        </ContactCard>
+
+        <ContactCard>
+          <ContactLabel>Availability</ContactLabel>
+
+          <ContactValue as="span" style={{ cursor: "default" }}>
+            {contact.availability}
+          </ContactValue>
+        </ContactCard>
+      </ContactGrid>
+
+      <ButtonGroup>
+        {/* <ContactButton href="/resume.pdf" download onClick={downloadResume}>
+          Download Resume
+        </ContactButton> */}
+
+        <ContactButton href={`mailto:${contact.email}`}>Email Me</ContactButton>
+      </ButtonGroup>
+
+      <SectionDivider divider />
     </Section>
   );
 };
