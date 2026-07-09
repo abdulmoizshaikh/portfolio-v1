@@ -21,16 +21,16 @@ import {
 const { contact } = constants;
 
 const ContactMe = () => {
-  const downloadResume = () => {
-    const link = document.createElement("a");
+  // const downloadResume = () => {
+  //   const link = document.createElement("a");
 
-    link.href = "/resume.pdf";
-    link.download = "Muhammad_Moiz_Resume.pdf";
+  //   link.href = "/resume.pdf";
+  //   link.download = "Muhammad_Moiz_Resume.pdf";
 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <Section id="contact">
@@ -67,11 +67,11 @@ const ContactMe = () => {
           <ContactLabel>LinkedIn</ContactLabel>
 
           <ContactValue
-            href={contact.linkedin}
+            href={contact.linkedin.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {contact.linkedinText}
+            {contact.linkedin.text}
           </ContactValue>
         </ContactCard>
 
@@ -79,11 +79,11 @@ const ContactMe = () => {
           <ContactLabel>GitHub</ContactLabel>
 
           <ContactValue
-            href={contact.github}
+            href={contact.github.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {contact.githubText}
+            {contact.github.text}
           </ContactValue>
         </ContactCard>
 
