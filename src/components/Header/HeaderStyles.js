@@ -26,7 +26,7 @@ export const Inner = styled.div`
 
   padding: 20px 48px;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     padding: 16px 40px;
   }
 
@@ -67,7 +67,7 @@ export const Nav = styled.ul`
   gap: 32px;
   list-style: none;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     display: none;
   }
 `;
@@ -90,7 +90,7 @@ export const SocialSection = styled.div`
   align-items: center;
   gap: 16px;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     display: none;
   }
 `;
@@ -138,7 +138,7 @@ export const MobileControls = styled.div`
   gap: 12px;
   flex-shrink: 0;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     display: flex;
   }
 `;
@@ -178,7 +178,7 @@ export const MenuToggle = styled.button`
 export const MobileMenu = styled.div`
   display: none;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     display: ${({ open }) => (open ? "flex" : "none")};
     flex-direction: column;
     gap: 4px;
