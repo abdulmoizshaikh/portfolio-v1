@@ -1,6 +1,6 @@
 import React from "react";
 import { DiNodejsSmall, DiReact } from "react-icons/di";
-import { FaCloud, FaMobileAlt } from "react-icons/fa";
+import { FaCloud, FaMobileAlt, FaDatabase, FaRobot } from "react-icons/fa";
 
 import {
   Section,
@@ -26,6 +26,8 @@ const icons = {
   react: <DiReact size="3rem" />,
   node: <DiNodejsSmall size="3rem" />,
   cloud: <FaCloud size="3rem" />,
+  database: <FaDatabase size="3rem" />,
+  ai: <FaRobot size="3rem" />,
 };
 
 const Technologies = () => (
