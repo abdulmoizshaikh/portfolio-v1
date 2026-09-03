@@ -332,18 +332,18 @@ export const constants = {
 
   // Experience
   experience: [
-    {
-      id: 0,
-      company: "CodeForce",
-      role: "Senior Software Engineer",
-      period: "Mar 2026 – Jun 2026",
-      highlights: [
-        "Architected an enterprise React Native VoIP platform for Android and iOS.",
-        "Developed Kotlin native modules with SIP, Linphone, PushKit, CallKit, and Bluetooth routing.",
-        "Migrated the application to React Native's New Architecture, improving performance by 40%.",
-        "Enhanced real-time communication reliability for enterprise customers.",
-      ],
-    },
+    // {
+    //   id: 0,
+    //   company: "CodeForce",
+    //   role: "Senior Software Engineer",
+    //   period: "Mar 2026 – Jun 2026",
+    //   highlights: [
+    //     "Architected an enterprise React Native VoIP platform for Android and iOS.",
+    //     "Developed Kotlin native modules with SIP, Linphone, PushKit, CallKit, and Bluetooth routing.",
+    //     "Migrated the application to React Native's New Architecture, improving performance by 40%.",
+    //     "Enhanced real-time communication reliability for enterprise customers.",
+    //   ],
+    // },
     {
       id: 1,
       company: "Xenia",
