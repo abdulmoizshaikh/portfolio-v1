@@ -7,6 +7,9 @@ Personal portfolio website built with **Next.js**, **React**, and **Styled Compo
 **Portfolio:**
 https://abdulmoizshaikh.github.io/portfolio-v1/
 
+**Tinyurl:**
+https://tinyurl.com/moiz-portfolio
+
 **GitHub Repository:**
 https://github.com/abdulmoizshaikh/portfolio-v1
 
